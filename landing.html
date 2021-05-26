@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid.Estetic</title>
+</head>
+<style>
+  .gallery {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ grid-template-rows: 1fr 1fr 1fr;
+  }
+  .gallery__img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+.item-1 {
+ grid-column: span 1;
+ grid-row: span 1;
+}
+.item-2 {
+  grid-column: span 2;
+ grid-row: span 1;
+ background: #E5E5E5;
+ text-align: center;
+ font-family: Saira;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 19px;
+display: flex;
+align-items: center;
+color: #000000;
+}
+.item-3 {
+  grid-column: span 1;
+ grid-row: span 2;
+ background: #E5E5E5;
+ text-align: center;
+ font-family: Saira;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 19px;
+display: flex;
+align-items: center;
+color: #000000;
+}
+.item-4{
+  grid-column: span 1;
+ grid-row: span 2;
+}
+.item-5{
+  grid-column: span 1;
+ grid-row: span 1;
+}
+.item-6{
+  grid-column: span 1;
+ grid-row: span 1;
+}
+@media  (max-width: 600px)
+  {
+    .gallery{
+      margin-top: 2%;
+      display: inline-block;
+      width: 65%;
+      height: 500px;
+
+    }
+
+
+  }
+
+
+
+</style>
+<body>
+  <div class="gallery">
+    <div class="gallery__item item-1">
+   <img src="baby.jpg" class="gallery__img" alt="Image 1">
+    </div>
+    <div class="gallery__item item-2">
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad minima, amet cumque ipsam quidem magni dolorum voluptates illum ratione obcaecati fuga maiores impedit minus architecto totam quasi sunt ducimus perspiciatis?
+   Unde, nam reiciendis modi voluptate laborum velit reprehenderit consequatur voluptas autem labore quis repudiandae molestiae aspernatur consectetur voluptatem deleniti corrupti eum vitae quia architecto laboriosam assumenda explicabo. Odio, pariatur dicta!
+   Velit explicabo ipsa nemo quae dolore eveniet consequatur aspernatur id aut voluptates totam, consequuntur pariatur blanditiis labore ratione earum dolores doloribus quasi harum ad. Expedita delectus culpa repellendus possimus mollitia?
+   Consequatur nobis illo suscipit quidem unde magnam quam incidunt, sunt enim laboriosam? Facere deleniti inventore alias quo quos natus minima debitis cumque maiores distinctio qui exercitationem perspiciatis, iure rerum facilis.
+   Architecto laborum ducimus repellendus quas perferendis odit, officia alias neque quae! Quos beatae, labore nulla a fuga provident delectus? Similique quod quia repellendus ratione sequi id incidunt nobis possimus culpa.</p>
+    </div>
+    <div class="gallery__item item-3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad minima, amet cumque ipsam quidem magni dolorum voluptates illum ratione obcaecati fuga maiores impedit minus architecto totam quasi sunt ducimus perspiciatis?
+        Unde, nam reiciendis modi voluptate laborum velit reprehenderit consequatur voluptas autem labore quis repudiandae molestiae aspernatur consectetur voluptatem deleniti corrupti eum vitae quia architecto laboriosam assumenda explicabo. Odio, pariatur dicta!
+        Velit explicabo ipsa nemo quae dolore eveniet consequatur aspernatur id aut voluptates totam, consequuntur pariatur blanditiis labore ratione earum dolores doloribus quasi harum ad. Expedita delectus culpa repellendus possimus mollitia?
+        Consequatur nobis illo suscipit quidem unde magnam quam incidunt, sunt enim laboriosam? Facere deleniti inventore alias quo quos natus minima debitis cumque maiores distinctio qui exercitationem perspiciatis, iure rerum facilis.
+        Architecto laborum ducimus repellendus quas perferendis odit, officia alias neque quae! Quos beatae, labore nulla a fuga provident delectus? Similique quod quia repellendus ratione sequi id incidunt nobis possimus culpa.</p>
+    </div>
+    <div class="gallery__item item-4">
+   <img src="man.jpg" class="gallery__img" alt="Image 4">
+    </div>
+    <div class="gallery__item item-5">
+   <img src="girl.jpg" class="gallery__img" alt="Image 5">
+    </div>
+    <div class="gallery__item item-6">
+   <img src="ritm.jpg" class="gallery__img" alt="Image 6">
+    </div>
+  </div>
+    </div>
+
+    
+</body>
+</html>
